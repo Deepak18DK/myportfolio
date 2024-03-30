@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description"
+    content="Deepak Kumar - Entrepreneur [DualGro].">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/dk.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/dk.jpg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/dk.jpg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <!-- Google fonts -->
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Deepak Kumar: Entrepreneur</title>
+</head>
+
+<body>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+       
+        <div class="logo-container">
+          <span class="logo animate-logo">Deepak Kumar</span>
+        </div>
+        <div class="header-text">
+          <h1>
+            <p class="animate-text-1">While my journey began as a solo founder,</p>
+            <p class="animate-text-2">Great team, great results!</p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle">
+          We Build Solutions for the Challenges You Face.
+        </h2>
+        <div class="scroll-button animate-scroll" tabindex="0">
+          <div class="arrow">↓</div> scroll
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo" title="Back to Homepage">
+        Deepak Kumar
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link">projects</a>
+        <a href="talks.html" class="link">My Business</a>
+        <a href="articles.html" class="link">Achievements</a>
+        <div class="social-media">
+          <a href="https://twitter.com/Deepak468787239" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a href="https://medium.com/@deepakecd1234" title="Medium">
+            <i class="demo-icon icon-medium"></i>
+          </a>
+         
+          <a href="https://www.linkedin.com/in/deepak-kumar-e-86870b236/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i class="demo-icon icon-cog"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="about" class="container">
+      <div class="intro-container">
+        <div class="intro-image">
+          <img src="./static/images/about/deepak.jpg" alt="Deepak Kumar" style="top: 10px;">
+        </div>
+        <div class="intro">
+          <h1 class="section-title">Hello, I'm Deepak Kumar</h1>
+          <p class="bold-text"> FOUNDER OF DUALGRO
+<p class="bold-text">
+            My passion lies in transforming ideas into solutions that address real-world pain points.
+            </p>
+            <p class="bold-text">
+            Since embarking on my entrepreneurial journey in 2022, I've been driven by the desire to build my own ventures and shape the future through impactful solutions.
+            </p>
+            </p>
+            <a href="mailto:deepakecd1234@gmail.com"><p style="font-size: 30px;"><b>EMAIL ME</b></p></a>
+        </div>
+      </div>
+    </section>
+          
+          <div class="section-link">
+            <a href="about.html" class="link-btn">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
+   
+    <section id="talks">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">My Business <span class="title-icon">&#127908;</span></h2>
+          <p class="section-subtitle">
+            Don't Just Live with Problems, Solve Them. We Do.
+          </p>
+        </div>
+        <div class="talks-container">
+          <div class="card scroll-in">
+            <div class="card-image">
+             
+                <img src="./static/images/talks/Dualgro.png" alt="Accessible.JS - Jemima Abu - CityJS Conf 2020"
+                  width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+              DualGro Connect Tech
+              </h3>
+              <div class="card-description">
+                <p>
+                  Current Startup
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+            
+                <img src="./static/images/talks/GreynnD.png"
+                  alt="Greynn" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Greynn Digitech
+              </h3>
+              <div class="card-description">
+                <p>
+                  2022 - 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              
+                <img src="./static/images/talks/Greynncode.png"
+                  alt="Jemima Abu - State Management for React Applications at React Live Conference Online" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                GreynnCode 
+              </h3>
+              <div class="card-description">
+                <p>
+                  2022 - 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+             
+                <img src="./static/images/talks/AFB.png"
+                  alt="Redux Middleware for React Applications by Jemima Abu from  Telesoftas  at 84th Devclub.lv"
+                  width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+               AFB Media
+              </h3>
+              <div class="card-description">
+                <p>
+                 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              
+                <img src="./static/images/talks/IOT.jpg"
+                  alt="Defining A Career Path in Technology - Jemima Abu - Women Tech Network" width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+               IOT Startup
+              </h3>
+              <div class="card-description">
+                <p>
+                 Upcoming
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+             
+                <img src="./static/images/talks/VM.jpg"
+                  alt="React Components and How To Style Them - Jemima Abu - React Summit 2020" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+              VM Business
+              </h3>
+              <div class="card-description">
+                <p>
+                  Upcoming
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">My Projects <span class="title-icon">&#128187;</span></h2>
+          <p class="section-subtitle">
+            Earlier projects provided valuable experience in multiple domains.
+          </p>
+        </div>
+        <div class="project-container">
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/sales.png" width="720" height="340" alt="Trainella yoga website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                   Sales Insights Analytics 
+                </h3>
+                <div class="project-description">
+                  <p>Through the analysis of a company's sales data, I gained hands-on experience in data analytics, which allowed me to develop and deliver a data-driven report.</p>
+                  <!-- <p>
+                    One Sunday in June, I attended a free yoga class that I saw online. After the class, I got to
+                    talking
+                    with the instructor and, when I mentioned that I was a web developer, she was like "What a
+                    coincidence, I've been meaning to develop a website for my yoga classes."
+                  </p>
+                  <p>
+                    Never one to look Serendipity in the mouth, I was like "Yeah sure I can do that". The catch was: she
+                    wanted a WordPress site and I'd never actually built a WordPress site from scratch before.
+                  </p>
+                  <p>
+                    After a lot of research and bumbling and mistaking wordpress.com for wordpress.org, I finally
+                    managed
+                    to set up the site with a WordPress theme that I tweaked with about 500 lines of additional CSS to
+                    create a webpage we were both happy with.
+                  </p> -->
+                </div>
+                <ul class="project-tags" title="Technologies used">
+                  <li class="tag">Ms Excel</li>
+                  <li class="tag">MYSQL</li>
+                  <li class="tag">PowerBI</li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/greynn.png" width="720" height="340"
+                alt="UNILAG Consult Cybercamp Website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  
+                    Greynn Ecommerce Store
+                
+                </h3>
+                <div class="project-description">
+                  <p>
+                    To gain hands-on experience in e-commerce, I launched an online store. This project provided me with a practical understanding of the entire e-commerce setup process, from product selection and marketing to fulfillment and customer service.
+                  </p>
+                  <!-- <p>
+                    The inspiration behind the design was something along the lines of: provide as much information as
+                    possible and be easy to navigate so we stuck to a basic layout with minimal animations.
+                  </p> -->
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">Shopify</li>
+                  <li class="tag">GoogleADS</li>
+                  <li class="tag">USA Drop</li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+         
+         
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="projects.html" class="link-btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
+    <section id="articles">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Achievements <span class="title-icon">&#128466;</span></h2>
+          <p class="section-subtitle">
+            My participation in hackathons and sports has fostered a results-oriented mindset.
+          </p>
+        </div>
+        <div class="articles-container">
+          <div class="article scroll-in">
+            <div class="article-image">
+             
+                <img src="./static/images/articles/kerala.jpg"
+                  alt="How To Learn JavaScript">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+               Kerala
+              </div>
+              <h3 class="article-title">
+                
+                  LiteBytes Hackathon
+               
+              </h3>
+              <div class="article-description">
+                <p>
+                 We have attended Finals which was conducted by Government Engineering College Thrissur (GEC Thrissur).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="article scroll-in">
+            <div class="article-image">
+             
+                <img src="./static/images/articles/pic.jpg"
+                  alt="A Beginner's Guide To Creating A Portfolio Website">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                Bangalore
+              </div>
+              <h3 class="article-title">
+               
+                 Code Red Hackathon
+                
+              </h3>
+              <div class="article-description">
+                <p>
+                  We have attended Finals which was conducted by BMS Institute of Technology and Management [BMSIT].
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="article scroll-in">
+            <div class="article-image">
+             
+                <img src="./static/images/articles/srm.jpg"
+                  alt="Handling Scroll Based Animation With Vanilla JavaScript">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                Chennai
+              </div>
+              <h3 class="article-title">
+               
+                  Hybrid Hack
+               
+              </h3>
+              <div class="article-description">
+                <p>
+                  We have attended Finals and claimed <b>Third Prize</b> which was conducted by SRM Chennai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="articles.html" class="link-btn">View All Achievements</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>
+  </main>
+  <footer class="index-footer">
+   
+    </div>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://twitter.com/Deepak468787239" title="Twitter">
+          <i class="demo-icon icon-twitter"></i>
+        </a>
+        <a href="https://medium.com/@deepakecd1234" title="Medium">
+          <i class="demo-icon icon-medium"></i>
+        </a>
+       
+        <a href="https://www.linkedin.com/in/deepak-kumar-e-86870b236/" title="LinkedIn">
+          <i class="demo-icon icon-linkedin"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy;Deepak Kumar</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/landing-page.js"></script>
+
+</html>
